@@ -49,12 +49,69 @@ const Header = () => {
                         </div>
                     </div>
                     <div>
-                            
+
                     </div>
                 </div>
             </div>
-            <div>
-
+            <div className='flex justify-between items-center rounded-t-4xl absolute bg-orange-50 z-10 w-full top-10 left-0 right-0'>
+                <div className='flex border w-[30%] justify-around'>
+                    <div
+                        onMouseEnter={(e) => {
+                            const element = e.currentTarget
+                            element.querySelector('div').style.transform = 'translateY(-25px)'
+                        }}
+                        onMouseLeave={(e) => {
+                            const element = e.currentTarget
+                            element.querySelector('div').style.transform = 'translateY(0px)'
+                        }}
+                        className='transition-all overflow-hidden cursor-pointer h-[22px] '
+                    >
+                        <div className='transition-all duration-400 ease-in-out flex flex-col m-0'>
+                            <a href='#' className='uppercase font-bold font-roboto inline-block '>Quienes somos</a>
+                            <a href='#' className='uppercase font-bold font-roboto inline-block '>Quienes somos</a>
+                        </div>
+                    </div>
+                    <div
+                        onMouseEnter={(e) => {
+                            const element = e.currentTarget
+                            element.querySelector('div').style.transform = 'translateY(-25px)'
+                        }}
+                        onMouseLeave={(e) => {
+                            const element = e.currentTarget
+                            element.querySelector('div').style.transform = 'translateY(0px)'
+                        }}
+                        className='transition-all overflow-hidden cursor-pointer h-[22px] '
+                    >
+                        <div className='transition-all duration-400 ease-in-out flex flex-col m-0'>
+                            <a href='#' className='uppercase font-bold font-roboto inline-block '>Quienes somos</a>
+                            <a href='#' className='uppercase font-bold font-roboto inline-block'>Quienes somos</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img className='border w-[150px]' src="./src/assets/fiveLogo.png" alt="" />
+                </div>
+                <div className='flex gap-4 items-center justify-center border w-[30%]'>
+                    <div
+                        onMouseEnter={(e) => {
+                            const element = e.currentTarget
+                            element.querySelector('div').style.transform = 'translateY(-25px)'
+                        }}
+                        onMouseLeave={(e) => {
+                            const element = e.currentTarget
+                            element.querySelector('div').style.transform = 'translateY(0px)'
+                        }}
+                        className='transition-all overflow-hidden cursor-pointer h-[22px]'
+                    >
+                        <div className='transition-all duration-400 ease-in-out flex flex-col m-0'>
+                            <a href='#' className='uppercase font-bold font-roboto inline-block '>Contacto</a>
+                            <a href='#' className='uppercase font-bold font-roboto inline-block '>Contacto</a>
+                        </div>
+                    </div>
+                    <div className='bg-red-400 px-4 py-2 rounded-full cursor-pointer'>
+                        SHOP
+                    </div>
+                </div>
             </div>
         </>
     )
