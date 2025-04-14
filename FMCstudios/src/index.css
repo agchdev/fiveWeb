@@ -23,3 +23,8 @@
   transition-timing-function: cubic-bezier(0.35, 1.5, 0.6, 1);
   /*--animation-bounce: 0.4s cubic-bezier(0.35, 1.5, 0.6, 1);*/
 }
+
+.corner {
+  position: relative;
+  background-image: radial-gradient(circle at 100% 100%, transparent calc(var(--border-radius) * var(--corner-size)), var(--color-light) calc((var(--border-radius) * var(--corner-size)) + 0.5px));
+}
