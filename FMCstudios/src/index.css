@@ -1,15 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
+/* Solo si estás usando Tailwind vía PostCSS */
 @import "tailwindcss";
-@theme {
-  --font-roboto: "Roboto", sans-serif; 
-}
-@theme {
+
+:root {
+  --title-size: clamp(3em, 7vw, 9.5em);
+  --text-size: clamp(5em, 7vw, 9.5em);
+  --semiTitle-size: clamp(3.5em, 7.5vw, 8em);
+  --font-roboto: "Roboto", sans-serif;
   --font-bebas: "Bebas Neue", sans-serif;
 }
+
+.big-title {
+  font-size: calc(var(--title-size) * 1.4);
+}
+
+.semiBig-title {
+  font-size: calc(var(--semiTitle-size) * 1);
+}
+
+.normal-text {
+  font-size: calc(var(--text-size) * 0.2);
+}
+
+
 .font-anton {
   font-family: 'Anton', sans-serif;
 }
@@ -19,12 +36,7 @@
 .font-playfair {
   font-family: 'Playfair Display', serif;
 }
+
 .ease-super {
   transition-timing-function: cubic-bezier(0.35, 1.5, 0.6, 1);
-  /*--animation-bounce: 0.4s cubic-bezier(0.35, 1.5, 0.6, 1);*/
-}
-
-.corner {
-  position: relative;
-  background-image: radial-gradient(circle at 100% 100%, transparent calc(var(--border-radius) * var(--corner-size)), var(--color-light) calc((var(--border-radius) * var(--corner-size)) + 0.5px));
 }

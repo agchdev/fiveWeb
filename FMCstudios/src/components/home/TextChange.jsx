@@ -34,9 +34,9 @@ const TextChange = () => {
     return (
         <div className='flex justify-center items-center pt-20 gap-10'>
             {/* AQUI VA EL PRIMER TEXTO Y EL BOCADILLO */}
-            <h2 className='font-anton text-[5rem] md:text-[6rem] lg:text-[6rem] xl:text-[11.5rem] font-bold text-neutral-900 transition-all duration-400 ease-super'>LET'S CHANGE</h2>
+            <h2 className='font-anton big-title font-bold text-neutral-900 transition-all duration-400 ease-super'>MAKING MAGIC</h2>
 
-            <div className='h-full hidden lg:flex border py-3 xl:py-6 justify-center xl:justify-between gap-0 xl:gap-40 items-center rounded-full px-25 xl:px-5 bg-red-500 text-white transition-all ease-super duration-400'>
+            <div className='h-full hidden md:flex border py-3 lg:py-4xl:py-8 justify-center xl:justify-between gap-0 xl:gap-20 items-center rounded-full px-20 xl:px-5 bg-red-500 text-white transition-all ease-super duration-400'>
                 <div ref={textChange} className='ml-0 xl:ml-15 xl:flex text-4xl h-15 ease-super overflow-hidden ease-in-out mb-1 transition-all ease-super duration-400'>
                     <div className='mt-3 h-10 transition-all duration-400 ease-super font-playfair flex-col gap-3 hidden xl:flex'>
                         <p>WEB DESING!</p>
