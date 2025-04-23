@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const Header = () => {
 
+    const header = useRef()
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.current.classList.remove('top-10')
+            } else {
+                header.current.classList.add('top-10')
+            }
+        })
+    }, [])
+    
+
     return (
         <>
-            <div className='bg-black/80 w-full p-2 pb-20'>
+            <div className='bg-black/80 w-full p-2 pb-20 absolute'>
                 <div className='w-[80%] mx-auto flex justify-between'>
                     <div className='flex w-[30%] gap-6'>
                         <div
@@ -16,7 +29,7 @@ const Header = () => {
                                 const element = e.currentTarget
                                 element.querySelector('div').style.transform = 'translateY(0px)'
                             }}
-                            className='transition-all overflow-hidden cursor-pointer h-[22px]'
+                            className='transition-all overflow-hidden cursor-pointer h-[22px] '
                         >
                             <div className='transition-all duration-400 ease-super'>
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24" fill='white'>
@@ -36,7 +49,7 @@ const Header = () => {
                                 const element = e.currentTarget
                                 element.querySelector('div').style.transform = 'translateY(0px)'
                             }}
-                            className=' transition-all overflow-hidden cursor-pointer h-[22px]'
+                            className=' transition-all overflow-hidden cursor-pointer h-[22px] '
                         >
                             <div className='transition-all duration-400 ease-super'>
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24" fill='white'>
@@ -53,7 +66,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className=' rounded-t-4xl absolute bg-orange-50 z-10 w-full top-10 left-0 right-0'>
+            <div ref={header} className=' rounded-t-4xl bg-orange-50 z-10 w-full top-0 left-0 right-0 sticky transition-all duration-300 ease'>
                 <div className='flex justify-between items-center'>
                     <div className='flex w-[30%] justify-center gap-5'>
                         <div
@@ -141,7 +154,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-[95%] mx-auto flex justify-between'>
+                <div className='w-[90%] mx-auto flex justify-between'>
                     <div className='h-0.5 bg-black w-[47%]'></div>
                     <div className='h-0.5 bg-black w-[47%]'></div>
                 </div>

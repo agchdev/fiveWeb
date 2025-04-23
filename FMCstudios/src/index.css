@@ -9,7 +9,7 @@
 :root {
   --title-size: clamp(3em, 7vw, 9.5em);
   --text-size: clamp(5em, 7vw, 9.5em);
-  --semiTitle-size: clamp(3.5em, 7.5vw, 8em);
+  --semiTitle-size: clamp(3.5em, 5vw, 6em);
   --font-roboto: "Roboto", sans-serif;
   --font-bebas: "Bebas Neue", sans-serif;
 }
