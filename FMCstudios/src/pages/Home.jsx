@@ -8,12 +8,12 @@ const Home = () => {
 
   return (
     <>
-      <div className='w-full bg-orange-50 '>
+      <div className='w-full bg-orange-50 pb-30 relative z-5 rounded-b-[50px]'>
         <TextChange />
         <Video />
         <OnlyText />
-        <FotoBanner />
       </div>
+        <FotoBanner />
     </>
   )
 }
