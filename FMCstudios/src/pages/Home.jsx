@@ -13,7 +13,10 @@ const Home = () => {
         <Video />
         <OnlyText />
       </div>
-        <FotoBanner />
+      <FotoBanner />
+      <div>
+        
+      </div>
     </>
   )
 }

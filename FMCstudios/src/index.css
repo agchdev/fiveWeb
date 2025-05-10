@@ -26,17 +26,36 @@
   font-size: calc(var(--text-size) * 0.2);
 }
 
+#giraLogo {
+  view-timeline: --efecto block;
+  animation-timeline: --efecto;
+  animation-name: giraLogo;
+  animation-range: entry 100% exit 100%;
+  animation-fill-mode: both;
+}
 
 .font-anton {
   font-family: 'Anton', sans-serif;
 }
+
 .font-bebas {
   font-family: 'Bebas Neue', sans-serif;
 }
+
 .font-playfair {
   font-family: 'Playfair Display', serif;
 }
 
 .ease-super {
   transition-timing-function: cubic-bezier(0.35, 1.5, 0.6, 1);
+}
+
+@keyframes giraLogo {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(90deg);
+  }
 }
