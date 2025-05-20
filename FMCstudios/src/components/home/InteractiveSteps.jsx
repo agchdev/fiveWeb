@@ -57,8 +57,7 @@ const InteractiveSteps = () => {
   return (
     <section 
       ref={sectionRef}
-      className="relative min-h-screen overflow-hidden"
-      style={{ backgroundColor: '#d4f69c' }} // Color verde lima exacto al de la imagen
+      className="relative min-h-screen overflow-hidden bg-orange-50"
     >
       {/* Forma de estrella/engranaje que ocupa toda la altura - usando el SVG proporcionado */}
       <div className="absolute inset-0" style={{ zIndex: 0 }}>
