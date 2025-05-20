@@ -3,6 +3,8 @@ import TextChange from '../components/home/TextChange'
 import Video from '../components/home/Video'
 import OnlyText from '../components/home/OnlyText'
 import FotoBanner from '../components/home/FotoBanner'
+import ScrollingGallery from '../components/home/ScrollingGallery'
+import InteractiveSteps from '../components/home/InteractiveSteps'
 
 const Home = () => {
 
@@ -14,9 +16,8 @@ const Home = () => {
         <OnlyText />
       </div>
       <FotoBanner />
-      <div>
-        
-      </div>
+      <InteractiveSteps />
+      <ScrollingGallery />
     </>
   )
 }
